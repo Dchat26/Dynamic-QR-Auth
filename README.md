@@ -39,16 +39,16 @@
 ## 🏗 시스템 구조
 
 ```mermaid
-flowchart LR
-    Admin["📱 관리 앱<br/>(android-admin)"]
-    Rental["📱 대여 앱<br/>(android-rental)"]
-    Server["🖥 인증 서버<br/>(Node.js)"]
-    Mobility["📟 모빌리티 단말<br/>(android-mobility)"]
+flowchart TB
+    Admin["📱 관리 앱<br/>android-admin"]
+    Rental["📱 대여 앱<br/>android-rental"]
+    Server["🖥 인증 서버<br/>Node.js"]
+    Mobility["📟 모빌리티 단말<br/>android-mobility"]
 
-    Admin -- "REST: 기기 생성·삭제" --> Server
-    Rental -- "REST: 로그인, 기기 목록,<br/>QR 요청, 인증, 반납" --> Server
-    Server <-- "WebSocket: 기기 등록,<br/>QR·인증번호 전송" --> Mobility
-    Mobility -. "화면의 QR 스캔 +<br/>인증번호 확인" .-> Rental
+    Admin -- "REST<br/>기기 생성·삭제" --> Server
+    Rental -- "REST<br/>로그인 · 기기 목록 · QR 요청 · 인증 · 반납" --> Server
+    Server <-- "WebSocket<br/>기기 등록 · QR·인증번호 전송" --> Mobility
+    Rental -. "단말 화면의 QR 스캔 + 인증번호 확인" .-> Mobility
 ```
 
 ## 🔄 대여 인증 흐름

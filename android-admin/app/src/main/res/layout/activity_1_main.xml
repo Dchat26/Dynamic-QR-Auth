@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context=".activities.MainActivity">
+
+<TextView
+    android:id="@+id/titleTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Virtual Mobility"
+    android:textSize="22sp"
+    android:textColor="#A1C9F1"
+    android:fontFamily="sans-serif"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="20dp"
+    android:letterSpacing="0.05" />
+
+<ScrollView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/scroll_view_border"
+    android:padding="8dp"
+    app:layout_constraintBottom_toTopOf="@id/bottomTextView"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+<LinearLayout
+    android:id="@+id/itemContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp" />
+    </ScrollView>
+
+<TextView
+    android:id="@+id/bottomTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="번호, 배터리 / 무작위 | 상태=배터리25%이하 off else on"
+    android:textSize="14sp"
+    android:textColor="#A1C9F1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/myButton"
+    android:layout_marginBottom="12dp" />
+
+<Button
+    android:id="@+id/myButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="+"
+    android:textSize="25dp"
+    android:textColor="#A1C9F1"
+    android:backgroundTint="#4F4F4F"
+    android:elevation="4dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginBottom="16dp"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

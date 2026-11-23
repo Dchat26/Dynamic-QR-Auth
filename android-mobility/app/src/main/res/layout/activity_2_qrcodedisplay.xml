@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#333333"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/qrCodeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="32dp"
+        android:background="@drawable/scroll_view_border"
+        android:elevation="4dp" />
+
+    <TextView
+        android:id="@+id/authCodeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="인증번호"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#A1C9F1"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/authCodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:padding="16dp"
+        android:background="@drawable/scroll_view_border"
+        android:elevation="4dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/validityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유효시간"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#A1C9F1"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:background="@drawable/scroll_view_border"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/additionalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="인증요청은 5분만 유효합니다."
+        android:textSize="16sp"
+        android:textColor="#A1C9F1"
+        android:fontFamily="sans-serif" />
+
+</LinearLayout>

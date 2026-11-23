@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#333333">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="-100dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="Image description" />
+
+    <TextView
+        android:id="@+id/textViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6자리 인증번호 입력"
+        android:textColor="#A1C9F1"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/authCodeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="20dp"
+        android:textSize="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:maxLength="6"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="인증하기"
+        android:backgroundTint="#A1C9F1"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

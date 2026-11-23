@@ -1,0 +1,6 @@
+[
+  {
+    "username": "demo",
+    "passwordHash": "여기에 scripts/hash-password.js로 만든 해시를 넣으세요"
+  }
+]

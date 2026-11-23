@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/dgray">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:contentDescription="로고 이미지"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/deviceCodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="기기 코드를 입력하세요"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:gravity="center"
+    />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="코드 등록"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#4F4F4F"
+        android:layout_gravity="center" />
+
+</LinearLayout>

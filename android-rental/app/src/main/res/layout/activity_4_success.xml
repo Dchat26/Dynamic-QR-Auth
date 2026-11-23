@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dgray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/speed_border"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/speedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="@color/pastel"
+                android:textSize="90sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unitTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="km/h"
+                android:textColor="@color/pastel"
+                android:textSize="30sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/middleImageView"
+            android:layout_width="450dp"
+            android:layout_height="350dp"
+            android:src="@drawable/map"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="중간 이미지" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/timerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이용시간 00:00"
+                android:textColor="@color/pastel"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/distanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이동거리: 0.0 km"
+                android:textColor="@color/pastel"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="반납"
+            android:textColor="@color/dgray"
+            android:textSize="16sp"
+            android:backgroundTint="@color/pastel"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</ScrollView>
